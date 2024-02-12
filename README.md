@@ -134,7 +134,7 @@ Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é
 ##### A extração de outliers pelo método k-NN teve um impacto positivo na redução da variabilidade dos dados
 ##### A distribuição não simétrica dos dados pode influenciar a detecção de outliers pelo método k-NN, especialmente na definição de vizinhos próximos.
 
-## CONLUSÃO
+## CONCLUSÃO
 Após analisar os resultados dos quatro métodos de detecção de outliers (Intervalo Interquartil, Z-Core, Isolation Forest e KNN), podemos fazer as seguintes conclusões:
 
 #### Comparação de Desempenho:
