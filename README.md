@@ -1,20 +1,21 @@
-# Métodos extração de outliers
+# Métodos extração de outliers 📜
 Neste repositório, realizo a comparação de diferentes métodos para a detecção de outliers, incluindo IQR, Z-Core, Isolation Forest e KNN. Meu objetivo é determinar qual desses métodos é mais adequado para o tipo de distribuição de dados em questão.
+Este análises foi implementado em Python. 💼 
 
 A detecção de outliers é uma etapa crucial na análise de dados, pois esses valores atípicos podem distorcer significativamente as análises estatísticas e os resultados dos modelos preditivos. Portanto, comparar e selecionar o método mais eficaz para identificar e tratar esses outliers é essencial para garantir a precisão e a confiabilidade das conclusões derivadas dos dados.
 
 Cada método de detecção de outliers possui suas próprias vantagens e limitações, e a escolha do método mais apropriado depende da natureza dos dados e das características da distribuição subjacente. Ao realizar essa comparação, busco não apenas identificar o método mais preciso, mas também entender melhor as nuances dos dados e como diferentes métodos de detecção de outliers podem ser aplicados de forma eficaz em diferentes contextos analíticos.
 
-## O que são Outliers e por que detectá-los?
+## O que são Outliers e por que detectá-los? 🔖
 Um outlier é uma observação que se diferencia tanto das demais observações que levanta suspeitas de que aquela observação foi gerada por um mecanismo distinto” (Hawkins, 1980)
 
 Detectar outliers é uma etapa crucial na análise de dados, pois ajuda a garantir a integridade, precisão e confiabilidade das conclusões derivadas dos dados. A presença de outliers pode distorcer as análises estatísticas e os resultados dos modelos preditivos, influenciando negativamente as interpretações feitas a partir dos dados. Portanto, identificar e tratar esses valores atípicos de forma adequada é fundamental para assegurar que as conclusões obtidas sejam válidas e representativas do verdadeiro comportamento dos dados.
 
-## Nossos dados:
+## Nossos dados: 🔖
 Os dados contêm o tempo de atendimento (em dias) dos tickets da área de suporte de uma empresa, divididos em L1 (layer 1) e L2 (layer 2). O Tempo Total de Suporte é a soma dos tempos de L1 e L2, desde o ano de 2021 até 2024.
 
 
-## Distribuição dos dados:
+## Distribuição dos dados: 🔖
 No Fig 1, por meio do histograma visualizamos a distribuição do nossos dados para L1, L2 e Suporte.
 L1: Tempo de atendimento tem um range de 0 até 482 dias
 L2: Tempo de atendimento tem um range de 0 até 349 dias
@@ -38,7 +39,7 @@ No nível L2, o tempo médio de atendimento é ainda maior, em torno de 50.2 dia
 <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estatisticas-geral.JPG" width=80% height=80%>
 </p>
 
-# 1er Método - Itervalo Interquartil
+# 1er Método - Itervalo Interquartil 
 
 Através desse método, outliers são definidos matematicamente como as observações que estão abaixo (Q1 − 1,5 x IQR) do "bigode inferior" do boxplot ou acima (Q3 + 1,5 x IQR) do "bigode superior" do boxplot.
 <p align="center">
