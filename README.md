@@ -66,5 +66,5 @@ de um conjunto de dados.
 
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIsolationKNN.png" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/knn.png" width=40% height=40%>  
 </p>
