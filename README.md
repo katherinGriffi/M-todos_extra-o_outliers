@@ -85,7 +85,7 @@ Após aplicar o método Z-Core para remover outliers dos dados, foram identifica
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_2dometodo.JPG" width=80% height=80%>  
  </p>
 
-##### Este método envolve a média e o desvio padrão, se houver outliers extremos, especialmente em distribuição assimétricas como as que temos, pode afetar significativqamente a estimação dos parametros.
+##### Este método envolve a média e o desvio padrão, se houver outliers extremos, especialmente em distribuição assimétricas como as que temos, pode afetar significativamente a estimação dos parametros.
 ##### Este método e recomendável em distribuições normais.
 
 
@@ -135,3 +135,19 @@ Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é
 ##### A distribuição não simétrica dos dados pode influenciar a detecção de outliers pelo método k-NN, especialmente na definição de vizinhos próximos.
 
 ## CONLUSÃO
+Após analisar os resultados dos quatro métodos de detecção de outliers (Intervalo Interquartil, Z-Core, Isolation Forest e KNN), podemos fazer as seguintes conclusões:
+
+#### Comparação de Desempenho:
+A assimetria dos nossos dados pode influenciar a eficácia dos métodos que utilizamos para detecção de outliers. Alguns métodos foram mais sensíveis aos valores extremos, como é o caso dos métodos IQR, Isolation Forest e k-NN.
+
+#### Impacto na Média e Desvio Padrão:
+Em distribuições assimétricas, como é o caso, a média e o desvio padrão estão sendo influenciados pelos valores extremos. Portanto, o método Z- core que utiliza estes parámetros estão sendo afetados significativamente, isso podemos confirmar quando vemos o número de outliers identificado por este método.
+
+#### Percentual de Outliers:
+- Os métodos IQR, Isolation Forest e k-NN, tiveram uma porcetagem proxima para detecção de outliers em todos os niveis de suporte.
+  
+#### Escolha do método de extração de outliers:
+- Debido a distribuição assimetrica de nossos dados, podemos em primera isntancia descartar o método Z-core devido ao tipo de dsitribuição.
+- Debido a distribuição asimétrica dos dados, podemos descartar o a detecção de outliers pelo método k-NN,  isso pode levar a uma consideração desigual dos vizinhos mais próximos ao determinar-se o ponto que é um outlier.
+- Tanto o Isolation Forest quanto o método do Intervalo Interquartil são bons para extração de outliers para nosso dados assimétricos porque são robustos, não fazem suposições sobre a distribuição dos dados e levam em consideração a dispersão dos dados de forma eficaz. tanto o Isolation Forest quanto o método do Intervalo Interquartil são bons para extração de outliers em dados assimétricos porque são robustos, não fazem suposições sobre a distribuição dos dados e levam em consideração a dispersão dos dados de forma eficaz.
+ 
