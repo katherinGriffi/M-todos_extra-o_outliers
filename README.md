@@ -15,7 +15,7 @@ No histograma abaixo podemos ver a distribuição de nosso dados para L1, L2 e S
 
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/Histograma-original.png" width=80% height=80%>
-  <img src='https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estatisticas-geral.JPG" width=80% height=80%>
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estatisticas-geral.JPG" width=80% height=80%>
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/boxplot.png" width=80% height=80%>
 </p>
 
