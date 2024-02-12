@@ -76,7 +76,7 @@ de um conjunto de dados.
 Após calcular a média e o desvio padrão, calculei os limites superior e inferior e procedi à extração dos outliers. A distribuição de dados após a remoção dos outliers pelo método Z-Core pode ser observada na Figura 8.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_2dometodos.png" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_2dometodos.png" width=100% height=80%>  
  </p>
 
 Após aplicar o método Z-Core para remover outliers dos dados, foram identificados poucos outliers em comparação com o primer método, ainda observamos uma alta variabilidade significativa nos tempos de atendimento em todos os niveis.
