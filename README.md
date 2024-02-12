@@ -55,11 +55,11 @@ Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é
    <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
 </p>
 
-#### Ao remover os outliers, observamos uma redução na variabilidade dos tempos de atendimento em todos os níveis de suporte (L1, L2 e Suporte total). Isso é evidenciado pela diminuição dos desvios padrão em relação aos valores originais, o que sugere uma distribuição dos dados mais concentrada em torno das medidas de tendência central.
+##### Ao remover os outliers, observamos uma redução na variabilidade dos tempos de atendimento em todos os níveis de suporte (L1, L2 e Suporte total). Isso é evidenciado pela diminuição dos desvios padrão em relação aos valores originais, o que sugere uma distribuição dos dados mais concentrada em torno das medidas de tendência central.
 
 ##### Ao aplicar o método de Intervalo Interquartil para remover outliers, conseguimos melhorar a qualidade e a confiabilidade das análises dos tempos de atendimento nos diferentes níveis de suporte. Isso nos permite obter insights mais robustos e tomar decisões mais informadas para otimizar os processos de suporte e melhorar a experiência do cliente.
 
-#### Como o método se concentra no quartil não é influenciado pela forma exacta da distribuição.
+##### Como o método se concentra no quartil não é influenciado pela forma exacta da distribuição.
 
 # 2do Método - Z_Core
 O método Z-Score (ou escore Z) é uma medida estatística que indica quantos desvios padrão um ponto de dados está da média 
@@ -73,7 +73,19 @@ de um conjunto de dados.
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/zcore.JPG" width=40% height=40%>  
 </p>
 
+Após calcular a média e o desvio padrão, calculei os limites superior e inferior e procedi à extração dos outliers. A distribuição de dados após a remoção dos outliers pelo método Z-Core pode ser observada na Figura 8.
 
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_2dometodos.png" width=80% height=80%>  
+ </p>
+
+Após aplicar o método Z-Core para remover outliers dos dados, foram identificados poucos outliers em comparação com o primer método, ainda observamos uma alta variabilidade significativa nos tempos de atendimento em todos os niveis.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_2dometodo.JPG" width=80% height=80%>  
+ </p>
+
+##### Este método envolve a média e o desvio padrão, se houver outliers extremos, especialmente em distribuição assimétricas como as que temos, pode afetar significativqamente a estimação dos parametros.
+##### Este método e recomendável em distribuições normais.
 
 
 
