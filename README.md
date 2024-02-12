@@ -45,8 +45,9 @@ Uma vez detetados os outliers, realizei a remoção dos mesmos. Portanto, nosso 
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=100% height=80%>  
    <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
 </p>
-### O IQR é menos sensível a outliers, isso torna robusto em situações em que existem valores extremos. 
-### Como o método se concentra no quartil não é influenciado pela forma exacta da distribuição.
+
+#### O IQR é menos sensível a outliers, isso torna robusto em situações em que existem valores extremos. 
+#### Como o método se concentra no quartil não é influenciado pela forma exacta da distribuição.
 
 # 2do Método - Z_Core
 O método Z-Score (ou escore Z) é uma medida estatística que indica quantos desvios padrão um ponto de dados está da média 
