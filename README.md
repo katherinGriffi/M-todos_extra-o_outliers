@@ -29,10 +29,9 @@ Na Fig2, por medio do grádico de outliers podemos detetar a presença de outlie
 
 Na Figura 3, realizei os cálculos das estatísticas e tanto em L1, L2 e Suporte podemos observar que a média é maior que a mediana, o que indica que a distribuição está inclinada para a direita (positivamente assimétrica). A maioria dos dados encontra-se à esquerda da média, isso também é possível observar na Figura 1. Este tipo de distribuição pode ser afetado por valores extremos.
 
-No nível L2, o desvio padrão é significativamente maior, indicando uma maior variabilidade nos tempos de atendimento. Além disso, a presença de outliers é mais pronunciada.
+No nível L2, o tempo médio de atendimento é ainda maior, em torno de 50.2 dias, com um desvio padrão de 59.9 dias. Isso indica uma variabilidade ainda maior nos tempos de atendimento em comparação com o nível L1, c
 
-Em todos os níveis de suporte (L1, L2 e Suporte total), há uma quantidade considerável de outliers, representando aproximadamente 13.5%, 15.9% e 17.2% dos dados, respectivamente. Isso sugere que existem casos que requerem atenção especial e podem influenciar significativamente as análises estatísticas.
-
+É evidente que os tempos de atendimento são significativamente mais longos no nível L2 em comparação com o nível L1. Isso sugere que as solicitações de suporte nos níveis L2 são mais complexas ou exigem mais tempo para serem resolvidas do que as do nível L1.
 
 <p align="center">
 <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estatisticas-geral.JPG" width=80% height=80%>
@@ -44,17 +43,22 @@ Através desse método, outliers são definidos matematicamente como as observa�
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IQR.JPG" width=40% height=40%>  
 </p>
-Após calculo dos limites superior e inferior, realizamos a detecção dos outliers, como se pode observar na Fig 5.
+Após o cálculo dos limites superior e inferior, procedemos com a detecção dos outliers, como pode ser observado na Figura 5.
+
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIQR.png" width=90% height=80%>  
 </p>
-Uma vez detetados os outliers, realizei a remoção dos mesmos. Portanto, nosso histograma e as estadisticas após aplicar o 1er método pode se observar na Fig 6 e Fig7.
+Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é possível observar nosso histograma e as estatísticas após a aplicação do 1º método nas Figuras 6 e 7.
+
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=100% height=80%>  
    <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
 </p>
 
-#### O IQR é menos sensível a outliers, isso torna robusto em situações em que existem valores extremos. 
+#### Ao remover os outliers, observamos uma redução na variabilidade dos tempos de atendimento em todos os níveis de suporte (L1, L2 e Suporte total). Isso é evidenciado pela diminuição dos desvios padrão em relação aos valores originais, o que sugere uma distribuição dos dados mais concentrada em torno das medidas de tendência central.
+
+##### Ao aplicar o método de Intervalo Interquartil para remover outliers, conseguimos melhorar a qualidade e a confiabilidade das análises dos tempos de atendimento nos diferentes níveis de suporte. Isso nos permite obter insights mais robustos e tomar decisões mais informadas para otimizar os processos de suporte e melhorar a experiência do cliente.
+
 #### Como o método se concentra no quartil não é influenciado pela forma exacta da distribuição.
 
 # 2do Método - Z_Core
