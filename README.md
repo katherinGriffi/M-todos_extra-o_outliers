@@ -42,7 +42,7 @@ Após calculo dos limites superior e inferior, realizamos a detecção dos outli
 </p>
 Uma vez detetados os outliers, realizei a remoção dos mesmos. Portanto, nosso histograma e as estadisticas após aplicar o 1er método pode se observar na Fig 6 e Fig7.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=100% height=80%>  
    <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
 </p>
 
