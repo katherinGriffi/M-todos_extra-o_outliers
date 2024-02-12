@@ -23,7 +23,7 @@ Suporte: Tempo de atendimento tem um range de 0 até 510 dias
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/Histograma-original.png" width=80% height=80%>  
 </p>
 
-Na Fig2, por medio do grádico de outliers podemos detetar a presença de outliers (os pontos em preto)
+Na Fig2, por medio do gráfico de box plot podemos observar a presença de outliers (os pontos em preto).
 <p align="center">
 <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/boxplot.png" width=80% height=80%>
 </p
@@ -91,12 +91,22 @@ Após aplicar o método Z-Core para remover outliers dos dados, foram identifica
 
 
 # 3er Método - Isolation Forest
-É um algoritmo de machine learning usado para deteção de anomalias. Este modelo é baseado em particiones recursivas dos dados, para isolar anomalias.
+O Isolation Forest é um algoritmo de machine learning utilizado para detecção de anomalias. Este modelo baseia-se na criação de partições recursivas nos dados, visando isolar as anomalias, assim como mostra a Fig 9, onde o outliers esta respresentando com o label Xj.
 
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/IsolationForest.JPG" width=40% height=40%>  
 </p>
 
+Após criar e treinar o modelo Isolation Forest da biblioteca scikit-learn, onde definimos o número de árvores na floresta (n_estimators=100), é possível visualizar os pontos de outliers (em vermelho) na Figura 10.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/DetectionIsolationForest.png" width=40% height=40%>  
+</p>
+
+Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é possível observar nosso histograma e as estatísticas após a aplicação do 3º método nas Figuras 11 e 12.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/histo_3ermetodos.png" width=100% height=80%>  
+   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_3ermetodo.JPG" width=80% height=80%>  
+</p>
 
 
 # 4to Método - K_NN (k-Nearest Neighbors)
