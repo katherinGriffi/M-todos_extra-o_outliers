@@ -34,7 +34,7 @@ Na Fig3, realizei o cálculas das estadísticas e tanto em L1, L2 e Suporte pode
 
 Através desse método, outliers são definidos matematicamente como as observações que estão abaixo (Q1 − 1,5 x IQR) do "bigode inferior" do boxplot ou acima (Q3 + 1,5 x IQR) do "bigode superior" do boxplot.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IQR.JPG" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IQR.JPG" width=40% height=40%>  
 </p>
 
 
@@ -47,7 +47,7 @@ de um conjunto de dados.
 
 – σ é o desvio padrão do conjunto de dados
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/zcore.JPG" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/zcore.JPG" width=40% height=40%>  
 </p>
 
 
@@ -57,7 +57,7 @@ de um conjunto de dados.
 É um algoritmo de machine learning usado para deteção de anomalias. Este modelo é baseado em particiones recursivas dos dados, para isolar anomalias.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IsolationForest.JPG" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IsolationForest.JPG" width=40% height=40%>  
 </p>
 
 
@@ -66,5 +66,5 @@ de um conjunto de dados.
 
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIsolationKNN.png" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIsolationKNN.png" width=40% height=40%>  
 </p>
