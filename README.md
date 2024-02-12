@@ -20,12 +20,12 @@ L1: Tempo de atendimento tem um range de 0 até 482 dias
 L2: Tempo de atendimento tem um range de 0 até 349 dias
 Suporte: Tempo de atendimento tem um range de 0 até 510 dias
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/Histograma-original.png" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/Histograma-original.png" width=80% height=80%>  
 </p>
 
 Na Fig2, por medio do grádico de outliers podemos detetar a presença de outliers (os pontos em preto)
 <p align="center">
-<img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/boxplot.png" width=80% height=80%>
+<img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/boxplot.png" width=80% height=80%>
 </p
 
 Na Figura 3, realizei os cálculos das estatísticas e tanto em L1, L2 e Suporte podemos observar que a média é maior que a mediana, o que indica que a distribuição está inclinada para a direita (positivamente assimétrica). A maioria dos dados encontra-se à esquerda da média, isso também é possível observar na Figura 1. Este tipo de distribuição pode ser afetado por valores extremos.
@@ -35,25 +35,25 @@ No nível L2, o tempo médio de atendimento é ainda maior, em torno de 50.2 dia
 É evidente que os tempos de atendimento são significativamente mais longos no nível L2 em comparação com o nível L1. Isso sugere que as solicitações de suporte nos níveis L2 são mais complexas ou exigem mais tempo para serem resolvidas do que as do nível L1.
 
 <p align="center">
-<img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estatisticas-geral.JPG" width=80% height=80%>
+<img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estatisticas-geral.JPG" width=80% height=80%>
 </p>
 
 # 1er Método - Itervalo Interquartil
 
 Através desse método, outliers são definidos matematicamente como as observações que estão abaixo (Q1 − 1,5 x IQR) do "bigode inferior" do boxplot ou acima (Q3 + 1,5 x IQR) do "bigode superior" do boxplot.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IQR.JPG" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/IQR.JPG" width=40% height=40%>  
 </p>
 Após o cálculo dos limites superior e inferior, procedemos com a detecção dos outliers, os pontos em vermelho, como pode ser observado na Figura 5.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIQR.png" width=90% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/DetectionIQR.png" width=90% height=80%>  
 </p>
 Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é possível observar nosso histograma e as estatísticas após a aplicação do 1º método nas Figuras 6 e 7.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=100% height=80%>  
-   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/histo_1ermetodos.png" width=100% height=80%>  
+   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_1ermetodo.JPG" width=80% height=80%>  
 </p>
 
 ##### Ao remover os outliers, observamos uma redução na variabilidade dos tempos de atendimento em todos os níveis de suporte (L1, L2 e Suporte total). Isso é evidenciado pela diminuição dos desvios padrão em relação aos valores originais, o que sugere uma distribuição dos dados mais concentrada em torno das medidas de tendência central.
@@ -71,18 +71,18 @@ de um conjunto de dados.
 
 – σ é o desvio padrão do conjunto de dados
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/zcore.JPG" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/zcore.JPG" width=40% height=40%>  
 </p>
 
 Após calcular a média e o desvio padrão, calculei os limites superior e inferior e procedi à extração dos outliers. A distribuição de dados após a remoção dos outliers pelo método Z-Core pode ser observada na Figura 8.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_2dometodos.png" width=100% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/histo_2dometodos.png" width=100% height=80%>  
  </p>
 
 Após aplicar o método Z-Core para remover outliers dos dados, foram identificados poucos outliers em comparação com o primer método, ainda observamos uma alta variabilidade significativa nos tempos de atendimento em todos os niveis.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_2dometodo.JPG" width=80% height=80%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_2dometodo.JPG" width=80% height=80%>  
  </p>
 
 ##### Este método envolve a média e o desvio padrão, se houver outliers extremos, especialmente em distribuição assimétricas como as que temos, pode afetar significativqamente a estimação dos parametros.
@@ -94,7 +94,7 @@ Após aplicar o método Z-Core para remover outliers dos dados, foram identifica
 É um algoritmo de machine learning usado para deteção de anomalias. Este modelo é baseado em particiones recursivas dos dados, para isolar anomalias.
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IsolationForest.JPG" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/IsolationForest.JPG" width=40% height=40%>  
 </p>
 
 
@@ -103,5 +103,5 @@ Após aplicar o método Z-Core para remover outliers dos dados, foram identifica
 
 
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/knn.png" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/knn.png" width=40% height=40%>  
 </p>
