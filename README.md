@@ -2,7 +2,7 @@
 Neste repositorio realizo a comparação de diferentes métodos para extração de outliers (IQR, Z-Core, Isolation Forest e KNN). Meu objetivo é escolher qual seria o melhor método para o tipo de distribuição de dados.
 
 ## Data
-Os dados contem o tempo de atendimeto (dias) dos tickets da área de suporte NOC, dividos em L1 (layer 1), L2 (layer2) e Tempo Total de Suporte é a soma de L1+L2 de uma empresa fiticia.
+Os dados contem o tempo de atendimeto (dias) dos tickets da área de suporte NOC, dividos em L1 (layer 1), L2 (layer2) e Tempo Total de Suporte é a soma de L1+L2 de uma empresa fiticia dese o ano 2021 até 2024.
 
 
 ## O que são Outliers e para que detetarlos?
@@ -36,6 +36,15 @@ Através desse método, outliers são definidos matematicamente como as observa�
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/IQR.JPG" width=40% height=40%>  
 </p>
+Após calculo dos limites superior e inferior, realizamos a detecção dos outliers, como se pode observar na Fig 5.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIQR.png" width=80% height=60%>  
+</p>
+Uma vez detetados os outliers, realizei a remoção dos mesmos. Portanto, nosso histograma e as estadisticas após aplicar o 1er método pode se observar na Fig 6 e Fig7.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/histo_1ermetodos.png" width=80% height=80%>  
+   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/estadisticas_1ermetodo.JPG" width=80% height=80%>  
+</p>
 
 
 # 2do Método - Z_Core
@@ -49,6 +58,7 @@ de um conjunto de dados.
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/zcore.JPG" width=40% height=40%>  
 </p>
+
 
 
 
