@@ -38,7 +38,7 @@ Através desse método, outliers são definidos matematicamente como as observa�
 </p>
 Após calculo dos limites superior e inferior, realizamos a detecção dos outliers, como se pode observar na Fig 5.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIQR.png" width=80% height=60%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/DetectionIQR.png" width=90% height=80%>  
 </p>
 Uma vez detetados os outliers, realizei a remoção dos mesmos. Portanto, nosso histograma e as estadisticas após aplicar o 1er método pode se observar na Fig 6 e Fig7.
 <p align="center">
