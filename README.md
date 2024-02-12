@@ -14,6 +14,7 @@ Detectar outliers é uma etapa crucial na análise de dados, pois ajuda a garant
 No histograma abaixo podemos ver a distribuição de nosso dados para L1, L2 e Suporte.
 
 <p align="center">
-  <img src=" https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/Histograma-original.png" width=80% height=80%>
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/Histograma-original.png" width=80% height=80%>
+  
  </p>
 
