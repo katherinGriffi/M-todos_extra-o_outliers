@@ -99,7 +99,7 @@ O Isolation Forest é um algoritmo de machine learning utilizado para detecção
 
 Após criar e treinar o modelo Isolation Forest da biblioteca scikit-learn, onde definimos o número de árvores na floresta (n_estimators=100), é possível visualizar os pontos de outliers (em vermelho) na Figura 10.
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/DetectionIsolationForest.png" width=40% height=40%>  
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/DetectionIsolationForest.png" width=90% height=80%>  
 </p>
 
 Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é possível observar nosso histograma e as estatísticas após a aplicação do 3º método nas Figuras 11 e 12.
@@ -108,10 +108,30 @@ Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é
    <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_3ermetodo.JPG" width=80% height=80%>  
 </p>
 
+##### A extração de outliers usando o método de Isolation Forest mostram uma redução na variabilidade dos tempos de atendimento em todos os níveis de suporte, indicando uma distribuição mais homogênea dos dados
+##### Este método de Isolation Forest é conhecido por sua robustez a distribuições assimétricas. Isso ocorre porque ele se baseia no princípio de isolar anomalias com base em sua raridade e não em sua distribuição. 
 
-# 4to Método - K_NN (k-Nearest Neighbors)
-
+# 4to Método - k-NN (k-Nearest Neighbors)
+O método k-NN (k-Nearest Neighbors) é uma técnica de aprendizado de máquina que detecta anomalias com base na proximidade dos vizinhos mais próximos. Ele calcula a distância entre cada ponto de dados e seus vizinhos mais próximos, e considera um ponto como uma anomalia se estiver significativamente distante de seus vizinhos. Na Fig 13, podemos observar que os pontos em vermelho (outliers) estão londe de seus vizinhos próximos, os pontos em azul.
 
 <p align="center">
   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/knn.png" width=40% height=40%>  
 </p>
+
+Após criar e treinar o modelo k-NN da biblioteca scikit-learn, onde definimos o número de vizinhos (n_neighbors=3), é possível visualizar os pontos de outliers (em vermelho) na Figura 14.
+Verificamos que tem algunos meses que nossos dados são mais densos, isso se deve a assimetría de nossos dados, isso pode levar a uma consideração desigual dos vizinhos mais próximos ao determinar-se o ponto que é um outlier.
+
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/DetectionIsolationKNN.png" width=90% height=80%>  
+</p>
+
+Uma vez detectados os outliers, procedi com a remoção dos mesmos. Portanto, é possível observar nosso histograma e as estatísticas após a aplicação do 4º método nas Figuras 15 e 16.
+<p align="center">
+  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/histo_4tometodos.png" width=100% height=80%>  
+   <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/estadisticas_4tometodo.JPG" width=80% height=80%>  
+</p>
+
+##### A extração de outliers pelo método k-NN teve um impacto positivo na redução da variabilidade dos dados
+##### A distribuição não simétrica dos dados pode influenciar a detecção de outliers pelo método k-NN, especialmente na definição de vizinhos próximos.
+
+## CONLUSÃO
