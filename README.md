@@ -21,7 +21,8 @@ L1: Tempo de atendimento tem um range de 0 até 482 dias
 L2: Tempo de atendimento tem um range de 0 até 349 dias
 Suporte: Tempo de atendimento tem um range de 0 até 510 dias
 <p align="center">
-  <img src="https://github.com/katherinGriffi/M-todos_extra-o_outliers/blob/main/imgs/Histograma-original.png" width=80% height=80%>  
+  <img src="https://drive.google.com/file/d/1utf1NEMJGrhyh7fp5mrKVqy7sLOVfdan/view?usp=drive_link" width=80% height=80%>  
+
 </p>
 
 Na Fig2, por medio do gráfico de box plot podemos observar a presença de outliers (os pontos em preto).
